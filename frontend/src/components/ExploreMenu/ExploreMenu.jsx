@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+rorimport React, { useContext } from 'react'
 import './ExploreMenu.css'
 import { StoreContext } from '../../Context/StoreContext'
 
@@ -14,7 +14,7 @@ const ExploreMenu = ({category,setCategory}) => {
         {menu_list.map((item,index)=>{
             return (
                 <div onClick={()=>setCategory(prev=>prev===item.menu_name?"All":item.menu_name)} key={index} className='explore-menu-list-item'>
-                    <img src={item.menu_image} className={category===item.menu_name?"active":""} alt="" />
+                    <img src={item.menu_image} className={category===item.menu_name?"active":""} alt="Error" />
                     <p>{item.menu_name}</p>
                 </div>
             )
